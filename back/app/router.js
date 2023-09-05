@@ -7,4 +7,5 @@ module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index);
   router.get('/getBasicData', controller.basicDataController.getBasicData);
+  router.post('/updateBasicData', controller.basicDataController.updateBasicData); // 添加一个 POST 路由来更新数据
 };

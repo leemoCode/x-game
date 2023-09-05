@@ -33,6 +33,12 @@ module.exports = appInfo => {
     agent: false, // 是否加载到 agent 上，默认关闭
   };
 
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
